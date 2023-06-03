@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador Challenge</title>
+
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <img class="logo-alura" src="imagenes/Logo.svg" alt="logo de alura" />
+      </h1>
+    </header>
+
+    <main>
+
+      <section class="input-encriptador">
+        <div class="input-caja">
+
+          <textarea placeholder="Ingresa el texto..." class="input-texto"></textarea>
+
+        </div>
+        
+
+        <div class="caja-reglas">
+          <img src="imagenes/informacion.svg">
+          <p>Solo letras minusculas y sin acentos</p>
+        </div>
+        
+        <div class="caja-botones">
+          <input type="button" class="boton-encriptar" value="Encriptar"  onclick="btnEncriptar()" >
+          <input type="button" class="boton-desencriptar" value="Desencriptar" onclick="btnDesencriptar()">
+        </div>
+      </section>
+
+      <section class="input-desencriptador">
+        
+        <textarea  class="mensaje" cols="20" rows="10"></textarea>
+
+        
+        <div class="caja-mensaje">
+          <p>Ningun mensaje fue encontrado</p>
+          <p>Ingrese el texto que deseas encriptar o desencriptar</p>
+        </div>
+        
+        <div class="cajaboton-copiar">
+          <!-- <input type="button" value="copiador" class="boton-copiar" onclick="copiar()"> -->
+          <button class="boton-copiardos" onclick="copiar()" >Copiar</button>
+        </div>
+        <div class="resultado-encriptar">
+          <p class="resultado-parrafo"></p>
+        </div>
+
+      </section>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+
+  <footer>
+    <p>&copy Todos los derechos reservados</p>
+  </footer>
+</html>
